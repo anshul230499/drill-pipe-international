@@ -1,24 +1,25 @@
-# Photography and licensing — DPI mosaic v5
+# DPI mosaic v6 — photographic sources, permission and replacement plan
 
-These are **representative stock photographs**, not photos of a DPI/Jindal facility or product.
-The website loads the photographs remotely from Pexels, so the customer can replace each URL when the factory photography is available. All are tagged 'Free' on Pexels and covered by the Pexels License, which permits commercial website use. Check the license when publishing.
+This is a **private design preview** using external photo URLs; no copyright license has been obtained for the third-party manufacturer and publisher photographs. Do not publish commercially with these photos until the relevant rights are cleared, or replace them with Jindal/DPI-owned media. Photos are illustrative only, and do **not** claim to document Jindal facilities or contracts.
 
-| Website tile | Subject / visual content | Pexels photo page |
-|---|---|---|
-| Oil rig hero | Offshore drilling platform | https://www.pexels.com/photo/offshore-drilling-rig-on-body-of-water-3216911/ |
-| API drill pipe | Industrial warehouse with stacked straight pipes | https://www.pexels.com/photo/industrial-warehouse-with-stacked-metal-pipes-36878027/ |
-| HWDP | Straight metal tube ends, not actual HWDP | https://www.pexels.com/photo/industrial-metal-pipes-stacked-in-black-and-white-36296531/ |
-| Seamless piercing | Steel pipe mill equipment (process context, **not a pictured piercing operation**) | https://www.pexels.com/photo/large-industrial-workshop-with-steel-pipe-manufacturing-29842696/ |
-| Upsetting | Industrial metalworking press (process context) | https://www.pexels.com/photo/manual-metalworking-with-industrial-press-27084592/ |
-| Heat treatment | Glowing steel in industrial furnace | https://www.pexels.com/photo/glowing-metal-in-industrial-furnace-interior-38406567/ |
-| Tool-joint forging | Hot metal forging with mechanical press | https://www.pexels.com/photo/a-man-forging-a-metal-5845934/ |
-| Welding & inspection | Welder working on pipe (arc-welding image, **not** actual friction welding at Jindal) | https://www.pexels.com/photo/industrial-welder-at-work-in-dimly-lit-workshop-29086424/ |
-| Ready for rig | Offshore oil rig in water | https://www.pexels.com/photo/an-oil-rig-in-middle-of-body-of-water-11718060/ |
-| Manufacturing depth / warehouse | Steel pipe storage | https://www.pexels.com/photo/industrial-warehouse-with-steel-pipe-storage-36878025/ |
-| Precision machining | CNC milling operation | https://www.pexels.com/photo/close-up-photo-of-metal-tool-10406128/ |
-| Inspection & testing | Worker measuring metal with caliper | https://www.pexels.com/photo/industrial-worker-measuring-steel-beam-width-36003961/ |
-| Storage & delivery | Metal tube stacks | https://www.pexels.com/photo/metal-tubes-on-stack-15508177/ |
+## The six manufacturing tiles
 
-NOTE: Images are commercial-use placeholders. For exact technical accuracy, replace the upsetting, piercing, friction-welding and NDT images with approved Jindal plant media. The captions distinguish representative subject matter from process-specific equipment.
+| # | Tile | Photo | Clarification |
+|---|---|---|---|
+| 1 | Piercing | STALEVICH.RU — https://stalevich.ru/blog/trubnyj-prokat-dlya-chego-on-nuzhen-i-kakovy-ego-osobennosti | Hot seamless tube manufacturing / piercing line, not a specific Jindal facility. User-provided reference. |
+| 2 | Upsetting | Ajax TOCCO — https://www.ajaxtocco.com/products/bar-tube-pipe-end-heating-systems | Photo shows end **heating** for upsetting, not the forging press; wording explicitly distinguishes the two. User-provided reference. |
+| 3 | Heat Treatment | TimkenSteel via PR Newswire — https://www.prnewswire.com/news-releases/timkensteel-brings-new-quench-and-temper-facility-online-increases-annual-heat-treat-capacity-by-50000-tons-300549012.html | Quench and temper facility; user-provided reference. |
+| 4 | Tool-Joint Forging | Representative hot forging press, https://www.lfconsult.de/de/referenzen/bgh-story.html | General forging equipment; no claim that depicted component is a tool joint. Closest match to user's fourth reference. |
+| 5 | Assembly & Inspection | Prodrill — https://www.rock-drill-bits.com/dth-pipe/oil-drilling-pipe.html | Real **drill pipe friction welding** image. User-provided reference. |
+| 6 | Ready for the Rig | Midland Reporter-Telegram / Permian Basin land rig — https://www.mrt.com/business/oil/article/baker-hughes-texas-permian-lead-decline-rig-18279904.php | Onshore Permian site. NOT a verified DPI-supplied drilling project. |
 
-Pexels license: https://www.pexels.com/license/
+## Other tile replacements
+
+- **Hero onshore rig:** Midland Reporter-Telegram, https://www.mrt.com/business/oil/article/Permian-Basin-oil-and-gas-output-reaches-new-17721340.php — permission needed.
+- **API Drill Pipe:** Permanent Steel, https://www.permanentsteel.com/newsshow/drill-pipe-connection.html — visible threaded drill-pipe joints. Permission needed.
+- **Heavy Weight Drill Pipe:** https://www.jssws-oil.com/sale-51556490-3-1-2-heavy-weight-drill-pipe-3-1-2-od-2-1-4-id-for-oil-and-gas-industry.html — HWDP joints. Permission needed.
+- **Drill Pipe Storage:** Patterson Services, https://pattersonservices.com/drillpipe-tubing-handling-tools/ — storage of real drill pipe. Permission needed.
+
+## When Jindal photos become available
+
+Replace the `src` of each relevant `<img>` in `index.html` with `assets/<filename>.jpg`. Recommended originals: Jindal Nashik conical piercer; pipe-end induction heating and upsetting press; quench-and-temper line; tool-joint forging press; Baytown friction welder and NDT; customer-approved Permian Basin land rig. Keep the captions technically precise. Do not substitute casing, line pipe, concrete pipe, plumbing pipe, or offshore platforms for finished drill pipe.
