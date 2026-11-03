@@ -17,7 +17,7 @@ This is a **private design preview** using external photo URLs; no copyright lic
 
 - **Hero onshore rig:** Midland Reporter-Telegram, https://www.mrt.com/business/oil/article/Permian-Basin-oil-and-gas-output-reaches-new-17721340.php — permission needed.
 - **API Drill Pipe:** Permanent Steel, https://www.permanentsteel.com/newsshow/drill-pipe-connection.html — visible threaded drill-pipe joints. Permission needed.
-- **Heavy Weight Drill Pipe:** https://www.jssws-oil.com/sale-51556490-3-1-2-heavy-weight-drill-pipe-3-1-2-od-2-1-4-id-for-oil-and-gas-industry.html — HWDP joints. Permission needed.
+- **Heavy Weight Drill Pipe:** Bundled original AI-generated illustrative rendering in `assets/hwdp-manufacturing-illustration.webp`. This is not a photograph of DPI or Jindal products and should be replaced with approved imagery once available.
 - **Drill Pipe Storage:** Patterson Services, https://pattersonservices.com/drillpipe-tubing-handling-tools/ — storage of real drill pipe. Permission needed.
 
 ## When Jindal photos become available
@@ -27,3 +27,12 @@ Replace the `src` of each relevant `<img>` in `index.html` with `assets/<filenam
 
 ## V8 daylight hero
 The hero uses locally bundled `assets/sunny-land-rig-illustration.webp`, a cropped, AI-generated illustrative land rig created for DPI's design preview. It depicts neither an identified rig nor a documented DPI-supplied project. Replace it later with an approved company photograph of a Permian Basin land rig. No photo source/license is needed for this generated illustrative image.
+
+
+- `assets/sunny-land-rig-hero-v2.webp`: AI-generated representative bright-daytime land rig image used for the hero tile placeholder. Replace with approved DPI/Jindal photography when available.
+
+## V10 updates
+
+- The HWDP product tile uses a bundled 1536 × 1024 original illustrative image to avoid broken third-party image links. Its appearance is representative, not a certified product specification.
+- The tall sunny land-rig hero still uses the bundled image `assets/sunny-land-rig-hero-v2.webp` (1122 × 1402), retained from V9.
+- API 5DP mentions now refer specifically to conventional drill pipe; HWDP is identified separately with API 7-1 where applicable.

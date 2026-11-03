@@ -44,3 +44,14 @@ Six manufacturing-stage photo tiles now use direct source imagery corresponding 
 - The site remains static HTML/CSS/JS, requiring no build system or JavaScript dependencies.
 
 **External manufacturing photographs** elsewhere in the site are still illustrative third-party source URLs. See PHOTO_SOURCES.md for restrictions before publishing publicly.
+
+
+V9 updates: faster years counter animation and a higher-resolution sunny land-rig hero image.
+
+## V10 updates
+- Replaced broken externally hosted HWDP image with a locally bundled 1536x1024 WebP illustration.
+- Added API 5DP references for drill pipe, and API 7-1 where applicable for HWDP.
+- Retained bright sunny rig hero from V9.
+- Accelerated 10+ years counter to 780ms.
+
+- Hero rig illustration retains its original 1122 x 1402 resolution in an optimized local WebP for faster load times.
