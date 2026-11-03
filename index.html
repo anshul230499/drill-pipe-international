@@ -149,15 +149,97 @@ label textarea{min-height:130px;resize:vertical}
 #topnav .brand img{width:250px;max-height:60px}
 @media(max-width:1100px){#topnav .brand img{width:215px}}
 @media(max-width:700px){#topnav .brand img{width:194px;max-height:50px}}
+</style>
+<style id="dpi-v8-interactions-and-table">
+/* A full-width, accessible specification finder */
+#specs .specs-title{grid-column:span 12;min-height:240px;padding:clamp(30px,4vw,60px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-content:center;align-items:center;gap:18px 35px;background:linear-gradient(112deg,#142c38,#30515e);}
+#specs .specs-title h2{font-size:clamp(3.4rem,5.1vw,6rem);grid-column:1;grid-row:1/3;max-width:740px}
+#specs .specs-title p{grid-column:2;grid-row:1;max-width:490px;font-size:18px;line-height:1.5}
+#specs .specs-title .text-link{grid-column:2;grid-row:2;justify-self:start}
+#specs .specs-table{grid-column:span 12;min-height:0;padding:clamp(20px,3vw,38px);display:flex;flex-direction:column;align-items:stretch;gap:20px;overflow:hidden;background:#f8faf9}
+#specs .table-scroll{width:100%;overflow:auto;max-width:100%;border:1px solid #c0d0d0;border-radius:0;outline-offset:4px;scrollbar-color:#63818a #ebf0ef}
+#specs table{width:100%;min-width:1260px;table-layout:fixed;border:0;border-collapse:separate;border-spacing:0;text-align:left;}
+#specs th,#specs td{font-size:15.5px!important;line-height:1.43!important;white-space:nowrap;padding:18px 14px!important;letter-spacing:0;border-left:0;border-right:1px solid #dae4e2;border-bottom:1px solid #e2e9e6;color:#213a44;}
+#specs th{padding:0!important;background:#dce6e4;font-size:15px!important;font-weight:700;position:sticky;top:0;z-index:3}
+#specs th:last-child,#specs td:last-child{border-right:0}
+#specs th:first-child,#specs td:first-child{position:sticky;left:0;z-index:2;background:#eaf1ef;font-weight:700}
+#specs th:first-child{z-index:4;background:#d1dedd}
+#specs td:nth-child(2),#specs td:nth-child(3){font-variant-numeric:tabular-nums}
+#specs tbody tr{transition:background-color .2s ease,box-shadow .2s ease;}
+#specs tbody tr:nth-child(even){background:#eff5f3}
+#specs tbody tr:hover{background:#d5e9ea;box-shadow:inset 0 0 0 1px #9ebbc1}
+#specs tbody tr:hover td:first-child{background:#c3dee0}
+#specs tbody tr[hidden]{display:none!important}
+#specs th:nth-child(1),#specs td:nth-child(1){width:10%}
+#specs th:nth-child(2),#specs td:nth-child(2){width:18%}
+#specs th:nth-child(3),#specs td:nth-child(3){width:14%}
+#specs th:nth-child(4),#specs td:nth-child(4){width:17%}
+#specs th:nth-child(5),#specs td:nth-child(5){width:17%}
+#specs th:nth-child(6),#specs td:nth-child(6){width:24%}
+.sort-header{display:flex;width:100%;min-height:66px;padding:15px 12px;align-items:center;justify-content:space-between;gap:8px;text-align:left;color:#1d3b46;border:0;background:transparent;font-size:15px;font-weight:800;line-height:1.25;cursor:pointer;transition:background .25s ease,color .25s ease;}
+.sort-header:hover,.sort-header:focus-visible{background:#b5cdce;color:#102e3b}
+.sort-indicator{font-size:21px;font-weight:400;opacity:.45;transition:transform .2s ease,opacity .2s ease}
+.sort-header:hover .sort-indicator{opacity:1;transform:translateY(-2px)}
+th[aria-sort="ascending"] .sort-indicator,th[aria-sort="descending"] .sort-indicator{opacity:1;color:#135473}
+.spec-controls{display:flex;gap:20px;align-items:end;justify-content:space-between;flex-wrap:wrap;}
+.spec-search-box{min-width:min(100%,300px);flex:1;max-width:470px}
+.spec-search-box label,.filter-label{display:block;color:#29434e;font-size:14px;font-weight:750;line-height:1.3;margin:0 0 10px}
+.spec-search-box input{width:100%;height:50px;background:#fff;border:1px solid #b8c9c7;outline:0;padding:0 15px;color:#16303d;font-size:16px;border-radius:0;transition:border-color .2s ease,box-shadow .2s ease}
+.spec-search-box input:focus{border-color:#2c728d;box-shadow:0 0 0 3px rgba(67,132,155,.2)}
+.spec-grade-area{display:block}
+.spec-filter-pills{display:flex;flex-wrap:wrap;gap:7px;}
+.spec-filter{background:#fff;border:1px solid #bccdcc;color:#23414d;border-radius:0;padding:11px 15px;min-width:54px;font-size:14px;font-weight:800;cursor:pointer;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease}
+.spec-filter:hover{background:#cde0e0;border-color:#789da6;transform:translateY(-2px)}
+.spec-filter.is-active{background:#1d4858;color:white;border-color:#1d4858;box-shadow:0 3px 0 #b8ccce}
+.spec-filter:active{transform:translateY(1px);box-shadow:none}
+.spec-table-footer{width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:14px;font-weight:750;color:#415a64}
+.spec-reset{color:#234a58;border:0;border-bottom:1px solid #78959f;background:transparent;padding:7px 2px;font-weight:800;font-size:14px;transition:color .22s ease,transform .22s ease}
+.spec-reset:hover{color:#05688a;transform:translateX(4px)}
+/* Site-wide premium micro-interactions: a little momentum, no needless flourishes. */
+.mainlinks .quote-link,.form-button{position:relative;isolation:isolate;overflow:hidden;display:inline-block;transition:transform .22s cubic-bezier(.2,.8,.2,1),background .22s ease,box-shadow .22s ease}
+.mainlinks .quote-link::before,.form-button::before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(105deg,transparent 18%,rgba(255,255,255,.20) 47%,transparent 74%);transform:translateX(-140%);transition:transform .58s cubic-bezier(.2,.75,.2,1)}
+.mainlinks .quote-link:hover::before,.form-button:hover::before{transform:translateX(140%)}
+.mainlinks .quote-link:hover,.form-button:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(11,32,42,.22)}
+.mainlinks .quote-link:active,.form-button:active{transform:translateY(0) scale(.985);box-shadow:none}
+.text-link{position:relative;border-bottom:1px solid currentColor;transition:gap .25s,opacity .2s,transform .24s;}
+.text-link:hover{gap:30px;transform:translateY(-2px)}
+.text-link:active{transform:translateY(0) scale(.98)}
+.text-link .big-arrow{display:inline-block;transition:transform .28s cubic-bezier(.2,.8,.2,1)}
+.text-link:hover .big-arrow{transform:translate(4px,-4px)}
+#manufacturing .process-toggle{transition:color .25s,letter-spacing .25s,transform .25s,border-color .25s}
+#manufacturing .process-toggle:hover{letter-spacing:.015em;transform:translateX(3px);border-color:white;color:#e8f6fd}
+#manufacturing .process-toggle:active{transform:scale(.985)}
+.m-tile--photo{transition:box-shadow .36s ease}
+.m-tile--photo:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+.hero-stat strong{font-variant-numeric:tabular-nums;display:block;letter-spacing:-.02em;will-change:transform}
+.hero-stat.is-counting strong{animation:countLift .36s cubic-bezier(.2,.8,.2,1)}
+@keyframes countLift{0%{opacity:.65;transform:translateY(12px) scale(.96)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.rig-tile img{object-position:50% 48%;filter:saturate(1.02) contrast(1.03)!important}
+.rig-tile .m-tile-shade{background:linear-gradient(180deg,rgba(13,32,42,.02) 0%,rgba(10,29,40,.02) 43%,rgba(11,31,42,.80) 100%)}
+@media (max-width:1120px){#specs .specs-title,#specs .specs-table{grid-column:span 6}}
+@media (max-width:780px){#specs .specs-title,#specs .specs-table{grid-column:span 2}#specs .specs-title{grid-template-columns:1fr;min-height:0;padding:44px 28px}#specs .specs-title h2,#specs .specs-title p,#specs .specs-title .text-link{grid-column:1;grid-row:auto}#specs .specs-table{padding:20px 15px}#specs .specs-title p{font-size:16px}}
+@media (max-width:560px){.spec-controls{gap:16px}.spec-search-box{min-width:100%;max-width:none}.spec-grade-area{width:100%}.spec-filter{padding:10px 12px}#specs table{min-width:1220px}}
+@media (prefers-reduced-motion:reduce){.mainlinks .quote-link,.form-button,.mainlinks .quote-link::before,.form-button::before,.text-link,.text-link .big-arrow,#manufacturing .process-toggle,.spec-filter,.spec-reset,.sort-header,.sort-indicator,.m-tile--photo,.hero-stat strong{animation:none!important;transition:none!important;transform:none!important}}
+</style>
+<style id="dpi-v8-nav-microinteractions">
+@media(prefers-reduced-motion:no-preference){
+.mainlinks a:not(.quote-link){position:relative;transition:color .22s ease,transform .22s ease}
+.mainlinks a:not(.quote-link)::after{content:"";position:absolute;bottom:-7px;left:0;width:100%;height:2px;background:#537f8a;transform:scaleX(0);transform-origin:left;transition:transform .28s cubic-bezier(.2,.8,.2,1)}
+.mainlinks a:not(.quote-link):hover{transform:translateY(-2px)}
+.mainlinks a:not(.quote-link):hover::after{transform:scaleX(1)}
+.mobile-toggle{transition:transform .2s ease,color .2s ease}
+.mobile-toggle:hover{transform:scale(1.13);color:#406a78}
+.mobile-toggle:active{transform:scale(.93)}
+}
 </style></head>
 <body>
 <header id="topnav"><a aria-label="Drill Pipe International, home" class="brand" href="#home"><img alt="Drill Pipe International, LLC" src="assets/dpi-logo-v7.svg"/></a><nav aria-label="Main navigation" class="mainlinks" id="mainlinks"><a href="#products">Products</a><a href="#manufacturing">Manufacturing</a><a href="#specs">Specifications</a><a href="#about">About</a><a class="quote-link" href="#contact">Request a quote</a></nav><button aria-controls="mainlinks" aria-expanded="false" aria-label="Open navigation menu" class="mobile-toggle" id="menuToggle">☰</button></header>
 <main id="home">
 <section aria-label="Introducing Drill Pipe International" class="mosaic">
 <div class="tile hero-tile"><img alt="Stacked steel pipes in an industrial warehouse" aria-hidden="true" class="hero-photo-inset" src="https://images.pexels.com/photos/36878027/pexels-photo-36878027.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"/><span class="plain-meta">Drill Pipe International, LLC   /   Jindal SAW Group   /   Baytown, Texas</span><div><h1>STEEL.<br/>STRENGTH.<br/>DRILLSTRING.</h1><p class="hero-lede">We don’t just supply drill pipe. Within the Jindal group, we manufacture it — from seamless tube production to forged tool joints, friction welding and final inspection.</p></div><div class="hero-footer"><a class="text-link" href="#manufacturing">See how we manufacture <span class="big-arrow">↗</span></a><span class="plain-meta">API Drill Pipe &amp; HWDP</span></div></div>
-<article class="m-tile m-tile--photo rig-tile"><img alt="Onshore drilling rig against a West Texas Permian Basin sunset" fetchpriority="high" src="https://s.hdnux.com/photos/01/31/04/77/23351292/3/rawImage.jpg"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="plain-meta">End use</span><div><h3>Made for the Permian.</h3><p>Land drilling programs, directional wells and demanding drillstring applications.</p></div></div></article>
+<article class="m-tile m-tile--photo rig-tile" data-image-note="Illustrative land rig image; not an identified DPI project"><img alt="Daylight illustration of a modern land-based drilling rig under a clear blue sky, representative imagery" fetchpriority="high" height="945" loading="eager" src="assets/sunny-land-rig-illustration.webp" width="768"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="plain-meta">End use</span><div><h3>Made for the Permian.</h3><p>Land drilling programs, directional wells and demanding drillstring applications.</p></div></div></article>
 <div class="tile hero-note"><span class="plain-meta">Jindal group manufacturing</span><strong>Every critical stage. In-house.</strong><a class="text-link" href="#manufacturing">Explore the process <span class="big-arrow">↗</span></a></div>
-<div class="tile hero-stat"><span class="plain-meta">Downhole industry experience</span><strong>10+</strong><span class="plain-meta">Years</span></div>
+<div class="tile hero-stat"><span class="plain-meta">Downhole industry experience</span><strong aria-label="10 plus years of downhole industry experience" class="years-count" data-target="10">10+</strong><span class="plain-meta">Years</span></div>
 </section>
 <section aria-label="Drill pipe products" class="mosaic" id="products">
 <div class="tile products-text"><div><span class="plain-meta">Products</span><h2 style="margin-top:30px">Only what we know best.</h2></div><div><p>API drill pipe and heavy weight drill pipe. Engineered around the size, grade, connection and operating demands of your drilling program.</p><a class="text-link" href="#specs" style="margin-top:25px">Technical specifications <span class="big-arrow">↗</span></a></div></div>
@@ -174,26 +256,26 @@ label textarea{min-height:130px;resize:vertical}
 <article class="m-tile m-tile--photo process-5" data-step="5"><img alt="Close view of a hot friction weld joining an oil drill pipe body to its tool joint" data-process="5" decoding="async" loading="lazy" src="https://www.rock-drill-bits.com/uploadfile/2023/05/17/20230517111821GInqk9.jpg"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="tile-number">5</span><div><h3>Assembly &amp; Inspection</h3><p>Tool joints are friction-welded, finished and inspected before release.</p><div class="process-expanded" hidden="" id="process-detail-5">Friction welding is followed by weld-zone heat treatment, machining, nondestructive inspection and final dimensional checks.</div><button aria-controls="process-detail-5" aria-expanded="false" class="process-toggle" type="button">View process detail</button></div></div></article>
 <article class="m-tile m-tile--photo process-6" data-step="6"><img alt="Land-based drilling rig and drill pipe rack on a Permian Basin drilling pad in West Texas" data-process="6" decoding="async" loading="lazy" src="https://s.hdnux.com/photos/01/30/37/47/23198154/3/ratio4x3_1920.jpg"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="tile-number">6</span><div><h3>Ready for the Rig</h3><p>Finished drill pipe is prepared for land-based operations, including Permian Basin drilling programs.</p><div class="process-expanded" hidden="" id="process-detail-6">The photo shows a modern onshore rig in West Texas. It illustrates the drilling environment without claiming that this is a DPI-supplied project.</div><button aria-controls="process-detail-6" aria-expanded="false" class="process-toggle" type="button">View process detail</button></div></div></article>
 <div class="tile process-note"><span class="plain-meta">Built within the Jindal group</span><h3>Specialist facilities. One manufacturing force.</h3><p>From the seamless tube mill to final assembly and inspection, Jindal group operations work as one connected manufacturing system. We know the processes, the people and the pipe — because it is built within our own group.</p><a class="text-link" href="#about">About DPI <span class="big-arrow">↗</span></a></div>
-<article class="m-tile m-tile--photo extra-machining"><img alt="Industrial CNC lathe performing metal machining in a workshop, representative image" loading="lazy" src="https://images.pexels.com/photos/10406128/pexels-photo-10406128.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1450"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="plain-meta">Manufacturing detail</span><div><h3>Precision Machining</h3><p>Controlled machining produces the specified dimensions and finished connection geometry.</p></div></div></article>
-<article class="m-tile m-tile--photo extra-inspection"><img alt="Technician measuring steel with a digital caliper during an inspection" loading="lazy" src="https://images.pexels.com/photos/36003961/pexels-photo-36003961.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="plain-meta">Manufacturing detail</span><div><h3>Inspection &amp; Testing</h3><p>Dimensional control, visual checks and documented testing help verify finished product requirements.</p></div></div></article>
-<article class="m-tile m-tile--photo extra-storage"><img alt="Actual drill pipe inventory showing tool joint connections, illustrative photograph" loading="lazy" src="https://i0.wp.com/pattersonservices.com/wp-content/uploads/2020/06/Drill-Pipe-7.jpeg?fit=2048%2C1536&amp;ssl=1"/><div class="m-tile-shade"></div><div class="m-tile-copy"><span class="plain-meta">Material handling</span><div><h3>Storage &amp; Delivery</h3><p>From finished joints to protected inventory, handling matters throughout the supply chain.</p></div></div></article>
+<article class="m-tile m-tile--photo extra-machining"><img alt="Industrial CNC lathe performing metal machining in a workshop, representative image" loading="lazy" src="https://images.pexels.com/photos/10406128/pexels-photo-10406128.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1450"/><div class="m-tile-shade"></div><div class="m-tile-copy"><div><h3>Precision Machining</h3><p>Controlled machining produces the specified dimensions and finished connection geometry.</p></div></div></article>
+<article class="m-tile m-tile--photo extra-inspection"><img alt="Technician measuring steel with a digital caliper during an inspection" loading="lazy" src="https://images.pexels.com/photos/36003961/pexels-photo-36003961.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"/><div class="m-tile-shade"></div><div class="m-tile-copy"><div><h3>Inspection &amp; Testing</h3><p>Dimensional control, visual checks and documented testing help verify finished product requirements.</p></div></div></article>
+<article class="m-tile m-tile--photo extra-storage"><img alt="Actual drill pipe inventory showing tool joint connections, illustrative photograph" loading="lazy" src="https://i0.wp.com/pattersonservices.com/wp-content/uploads/2020/06/Drill-Pipe-7.jpeg?fit=2048%2C1536&amp;ssl=1"/><div class="m-tile-shade"></div><div class="m-tile-copy"><div><h3>Storage &amp; Delivery</h3><p>From finished joints to protected inventory, handling matters throughout the supply chain.</p></div></div></article>
 <div class="below-process">Production-stage images are illustrative references from third-party sources; they do not depict Jindal or DPI facilities. Replace them with approved Jindal photography before public commercial use. Onshore rig photographs show Permian Basin operations but do not document a specific DPI-supplied project.</div>
 </section>
 <section aria-label="Specifications" class="mosaic" id="specs">
-<div class="tile specs-title"><span class="plain-meta">Reference data</span><h2>Standard sizes &amp; grades.</h2><p>Common API 5DP sizes, nominal weights, grades and connections. Contact DPI for a specification-specific offer.</p><a class="text-link" href="#contact">Request a technical quote <span class="big-arrow">↗</span></a></div>
-<div class="specs-table"><div class="table-scroll"><table>
+<div class="tile specs-title"><h2>Standard sizes &amp; grades.</h2><p>Common API 5DP sizes, nominal weights, grades and connections. Contact DPI for a specification-specific offer.</p><a class="text-link" href="#contact">Request a technical quote <span class="big-arrow">↗</span></a></div>
+<div aria-label="Searchable, sortable drill pipe specifications" class="specs-table"><div aria-label="Table controls" class="spec-controls"><div class="spec-search-box"><label for="spec-search">Find a size, grade or application</label><input aria-label="Search drill pipe specifications" autocomplete="off" id="spec-search" placeholder="Try 4½, G105 or horizontal wells" type="search"/></div><div class="spec-grade-area"><span class="filter-label">Filter by grade</span><div aria-label="Filter table by steel grade" class="spec-filter-pills" role="group"><button aria-pressed="true" class="spec-filter is-active" data-grade="All" type="button">All</button><button aria-pressed="false" class="spec-filter" data-grade="E75" type="button">E75</button><button aria-pressed="false" class="spec-filter" data-grade="X95" type="button">X95</button><button aria-pressed="false" class="spec-filter" data-grade="G105" type="button">G105</button><button aria-pressed="false" class="spec-filter" data-grade="S135" type="button">S135</button></div></div></div><div aria-label="Scroll horizontally to view the complete specifications table" class="table-scroll" role="region" tabindex="0"><table>
 <thead>
 <tr>
-<th>OD (inches)</th>
-<th>Nominal Weight (lb/ft)</th>
-<th>Wall Thickness</th>
-<th>Common Grades</th>
-<th>Typical Connection</th>
-<th>Application</th>
+<th aria-sort="none"><button aria-label="Sort table by OD (inches)" class="sort-header" data-col="0" type="button">OD (inches)<span aria-hidden="true" class="sort-indicator">↕</span></button></th>
+<th aria-sort="none"><button aria-label="Sort table by Nominal Weight (lb/ft)" class="sort-header" data-col="1" type="button">Nominal Weight (lb/ft)<span aria-hidden="true" class="sort-indicator">↕</span></button></th>
+<th aria-sort="none"><button aria-label="Sort table by Wall Thickness" class="sort-header" data-col="2" type="button">Wall Thickness<span aria-hidden="true" class="sort-indicator">↕</span></button></th>
+<th aria-sort="none"><button aria-label="Sort table by Common Grades" class="sort-header" data-col="3" type="button">Common Grades<span aria-hidden="true" class="sort-indicator">↕</span></button></th>
+<th aria-sort="none"><button aria-label="Sort table by Typical Connection" class="sort-header" data-col="4" type="button">Typical Connection<span aria-hidden="true" class="sort-indicator">↕</span></button></th>
+<th aria-sort="none"><button aria-label="Sort table by Application" class="sort-header" data-col="5" type="button">Application<span aria-hidden="true" class="sort-indicator">↕</span></button></th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr data-index="0">
 <td>2⅜"</td>
 <td>6.65</td>
 <td>0.280"</td>
@@ -201,7 +283,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>NC26 (2⅜" IF)</td>
 <td>Slim-hole, coiled tubing assist</td>
 </tr>
-<tr>
+<tr data-index="1">
 <td>2⅞"</td>
 <td>10.40</td>
 <td>0.362"</td>
@@ -209,7 +291,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>NC31 (2⅞" IF)</td>
 <td>Shallow wells, slimhole</td>
 </tr>
-<tr>
+<tr data-index="2">
 <td>3½"</td>
 <td>13.30 – 15.50</td>
 <td>0.368" – 0.449"</td>
@@ -217,7 +299,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>NC38 (3½" IF)</td>
 <td>Medium-depth onshore wells</td>
 </tr>
-<tr>
+<tr data-index="3">
 <td>4"</td>
 <td>14.00 – 15.70</td>
 <td>0.330" – 0.380"</td>
@@ -225,7 +307,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>NC40 (4" IF)</td>
 <td>Medium to deep wells</td>
 </tr>
-<tr>
+<tr data-index="4">
 <td>4½"</td>
 <td>16.60 – 20.00</td>
 <td>0.337" – 0.430"</td>
@@ -233,7 +315,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>NC46 (4½" IF)</td>
 <td>Deep wells, directional — most common size</td>
 </tr>
-<tr>
+<tr data-index="5">
 <td>5"</td>
 <td>19.50</td>
 <td>0.362"</td>
@@ -241,7 +323,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>NC50 (5" IF)</td>
 <td>Deep vertical &amp; horizontal wells</td>
 </tr>
-<tr>
+<tr data-index="6">
 <td>5½"</td>
 <td>21.90</td>
 <td>0.361"</td>
@@ -249,7 +331,7 @@ label textarea{min-height:130px;resize:vertical}
 <td>5½" FH</td>
 <td>High-torque, deepwater, HP/HT wells</td>
 </tr>
-<tr>
+<tr data-index="7">
 <td>6⅝"</td>
 <td>25.20</td>
 <td>0.330"</td>
@@ -258,8 +340,8 @@ label textarea{min-height:130px;resize:vertical}
 <td>Deepwater, ERD, maximum torque wells</td>
 </tr>
 </tbody>
-</table></div></div>
-<div class="grades-title">Steel grades   /   typical minimum mechanical properties</div>
+</table></div><div class="spec-table-footer"><span aria-live="polite" id="spec-results" role="status">8 sizes shown</span><button class="spec-reset" id="spec-reset" type="button">Reset filters ↺</button></div></div>
+<div class="grades-title">Steel grades and mechanical properties</div>
 <div class="grade-tile"><strong>E75</strong><p>Yield 75,000 psi<br/>Minimum tensile 100,000 psi</p></div>
 <div class="grade-tile"><strong>X95</strong><p>Yield 95,000 psi<br/>Minimum tensile 105,000 psi</p></div>
 <div class="grade-tile"><strong>G105</strong><p>Yield 105,000 psi<br/>Minimum tensile 115,000 psi</p></div>
@@ -303,4 +385,90 @@ if('IntersectionObserver'in window && !matchMedia('(prefers-reduced-motion: redu
     });
   });
 })();
-</script></body></html>
+</script>
+<script id="dpi-v8-script">
+(()=>{
+ 'use strict';
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // Scroll-triggered 1 -> 10+ counter, with an accessible static fallback.
+ const counter=document.querySelector('.years-count');
+ if(counter && !reduced){
+   const start=()=>{
+     if(counter.dataset.played==='true')return;
+     counter.dataset.played='true';
+     const target=Number(counter.dataset.target||10);
+     const startTime=performance.now(), duration=1850;
+     const tile=counter.closest('.hero-stat');
+     tile?.classList.add('is-counting');
+     const frame=(now)=>{
+       const t=Math.min(1,(now-startTime)/duration);
+       const eased=1-Math.pow(1-t,2.7);
+       const n=Math.min(target,1+Math.floor(eased*(target-1)));
+       counter.textContent=n+(n===target?'+':'');
+       if(t<1)requestAnimationFrame(frame);
+       else{counter.textContent=target+'+';tile?.classList.remove('is-counting')}
+     };
+     counter.textContent='1';requestAnimationFrame(frame);
+   };
+   if('IntersectionObserver' in window){
+     const io=new IntersectionObserver(entries=>{
+       if(entries.some(e=>e.isIntersecting)){start();io.disconnect()}
+     },{threshold:.35});io.observe(counter.closest('.hero-stat')||counter);
+   }else start();
+ }
+ const table=document.querySelector('#specs table');
+ if(!table)return;
+ const body=table.tBodies[0], rows=Array.from(body.rows);
+ const input=document.getElementById('spec-search');
+ const result=document.getElementById('spec-results');
+ const pills=Array.from(document.querySelectorAll('.spec-filter'));
+ const sorts=Array.from(document.querySelectorAll('.sort-header'));
+ let grade='All', sortColumn=-1, direction=1;
+ const normalize=(v)=>String(v).toLowerCase().normalize('NFKD').trim();
+ const numerize=(v)=>{
+   const s=String(v).replace(/[⅜⅞½⅝⅛¼¾]/g, m=>({'⅜':'.375','⅞':'.875','½':'.5','⅝':'.625','⅛':'.125','¼':'.25','¾':'.75'}[m]));
+   const match=s.match(/[0-9]+(?:\.[0-9]+)?/);return match?Number(match[0]):0;
+ };
+ const cellValue=(tr,col)=>tr.cells[col]?.textContent.trim()||'';
+ const render=()=>{
+   const query=normalize(input.value);
+   let shown=0;
+   rows.forEach(tr=>{
+     const grades=cellValue(tr,3).split(',').map(v=>v.trim());
+     const text=normalize(Array.from(tr.cells).map(td=>td.textContent).join(' '));
+     const visible=(grade==='All'||grades.includes(grade))&&(!query||text.includes(query));
+     tr.hidden=!visible;if(visible)shown++;
+   });
+   result.textContent=shown+' of '+rows.length+' sizes shown'+(grade!=='All'?' · '+grade:'');
+ };
+ pills.forEach(button=>button.addEventListener('click',()=>{
+   grade=button.dataset.grade;
+   pills.forEach(p=>{const active=p===button;p.classList.toggle('is-active',active);p.setAttribute('aria-pressed',String(active))});
+   render();
+ }));
+ input.addEventListener('input',render);
+ document.getElementById('spec-reset').addEventListener('click',()=>{
+   input.value='';grade='All';sortColumn=-1;direction=1;
+   pills.forEach(p=>{const active=p.dataset.grade==='All';p.classList.toggle('is-active',active);p.setAttribute('aria-pressed',String(active))});
+   rows.sort((a,b)=>Number(a.dataset.index)-Number(b.dataset.index)).forEach(tr=>body.append(tr));
+   sorts.forEach(b=>{b.parentElement.setAttribute('aria-sort','none');b.querySelector('.sort-indicator').textContent='↕'});
+   render();
+ });
+ sorts.forEach(button=>button.addEventListener('click',()=>{
+   const col=Number(button.dataset.col);
+   if(sortColumn===col) direction*=-1;else{sortColumn=col;direction=1}
+   sorts.forEach(b=>{b.parentElement.setAttribute('aria-sort','none');b.querySelector('.sort-indicator').textContent='↕'});
+   button.parentElement.setAttribute('aria-sort',direction===1?'ascending':'descending');
+   button.querySelector('.sort-indicator').textContent=direction===1?'↑':'↓';
+   rows.sort((a,b)=>{
+     const av=cellValue(a,col),bv=cellValue(b,col);
+     const numeric=[0,1,2].includes(col);
+     const cmp=numeric?numerize(av)-numerize(bv):av.localeCompare(bv,undefined,{numeric:true,sensitivity:'base'});
+     return direction*(cmp || Number(a.dataset.index)-Number(b.dataset.index));
+   }).forEach(tr=>body.append(tr));
+   render();
+ }));
+ render();
+})();
+</script>
+</body></html>

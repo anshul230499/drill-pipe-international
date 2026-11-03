@@ -34,3 +34,13 @@ Six manufacturing-stage photo tiles now use direct source imagery corresponding 
 - Replaced the globe symbol with a technical tool-joint silhouette logo in SVG; updated favicon.
 - Reworked corporate and manufacturing copy to emphasize the in-house process chain across Jindal group facilities without suggesting all operations are in Baytown.
 - Existing photo-source and commercial-usage notes still apply.
+
+## V8 design and interaction updates (Nov 2026)
+- Replaced the nighttime rig hero with a locally bundled, sunny daytime land-rig illustration. This illustrative hero image was created for the design and is **not** a photo of a DPI-supplied Permian Basin project.
+- The "10+ Years" statistic animates from 1 to 10+ as it enters view; reduced-motion preferences bypass the animation.
+- Made the full-width specification table readable at ~15–16px, with a search field, E75/X95/G105/S135 filters, sortable headers, live result count, and reset control.
+- Added hover/press animations to navigation, CTAs, process toggles, table controls, and links.
+- Removed filler text such as "Reference data" and redundant "Manufacturing detail" labels.
+- The site remains static HTML/CSS/JS, requiring no build system or JavaScript dependencies.
+
+**External manufacturing photographs** elsewhere in the site are still illustrative third-party source URLs. See PHOTO_SOURCES.md for restrictions before publishing publicly.

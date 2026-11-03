@@ -23,3 +23,7 @@ This is a **private design preview** using external photo URLs; no copyright lic
 ## When Jindal photos become available
 
 Replace the `src` of each relevant `<img>` in `index.html` with `assets/<filename>.jpg`. Recommended originals: Jindal Nashik conical piercer; pipe-end induction heating and upsetting press; quench-and-temper line; tool-joint forging press; Baytown friction welder and NDT; customer-approved Permian Basin land rig. Keep the captions technically precise. Do not substitute casing, line pipe, concrete pipe, plumbing pipe, or offshore platforms for finished drill pipe.
+
+
+## V8 daylight hero
+The hero uses locally bundled `assets/sunny-land-rig-illustration.webp`, a cropped, AI-generated illustrative land rig created for DPI's design preview. It depicts neither an identified rig nor a documented DPI-supplied project. Replace it later with an approved company photograph of a Permian Basin land rig. No photo source/license is needed for this generated illustrative image.
