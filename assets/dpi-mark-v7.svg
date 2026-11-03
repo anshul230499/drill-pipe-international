@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="DPI drill-pipe tool joint mark">
+ <rect width="96" height="96" fill="#172a32"/>
+ <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b7cbd0"/><stop offset=".5" stop-color="#3c7589"/><stop offset="1" stop-color="#a1bac2"/></linearGradient></defs>
+ <path d="M8 35H30V28H43V32H58V24H74V32H88V64H74V72H58V64H43V68H30V61H8Z" fill="url(#s)"/>
+ <path d="M17 36v23M21 36v23M65 34l8 29M71 34l8 29M77 34l8 29" fill="none" stroke="#173847" stroke-width="2.5"/>
+</svg>

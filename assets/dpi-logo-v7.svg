@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="106" viewBox="0 0 560 106" role="img" aria-labelledby="brandtitle branddesc">
+ <title id="brandtitle">Drill Pipe International, LLC</title>
+ <desc id="branddesc">An industrial tool-joint silhouette next to the company wordmark.</desc>
+ <defs>
+  <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#aec2c8"/><stop offset=".28" stop-color="#567786"/><stop offset=".58" stop-color="#193e50"/><stop offset="1" stop-color="#7796a0"/></linearGradient>
+ </defs>
+ <!-- Side-profile silhouette of a machined drill pipe tool joint; not a globe or sports ball. -->
+ <g transform="translate(6,19)">
+  <path d="M3 27H35V18H59V22H78V14H106V22H129V54H106V62H78V54H59V58H35V49H3Z" fill="url(#steel)"/>
+  <path d="M3 27H35V18H59V22H78V14H106V22H129" fill="none" stroke="#c6d7dd" stroke-width="2"/>
+  <path d="M3 49H35V58H59V54H78V62H106V54H129" fill="none" stroke="#102d39" stroke-width="2"/>
+  <path d="M17 28v20M22 28v20M27 28v20" stroke="#23495a" stroke-width="2.3"/>
+  <path d="M93 23l7 30M99 23l7 30M105 23l7 30M111 23l7 30M117 23l7 30" stroke="#153240" stroke-width="2.4" opacity=".92"/>
+  <rect x="58" y="23" width="4" height="30" fill="#c2d2d6" opacity=".75"/>
+ </g>
+ <path d="M159 16v72" stroke="#b5c4c7" stroke-width="2"/>
+ <text x="180" y="54" fill="#172a32" font-family="Arial Narrow,Arial,Helvetica,sans-serif" font-size="49" font-weight="800" letter-spacing="-1">DRILL PIPE</text>
+ <text x="182" y="80" fill="#316273" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="3.15">INTERNATIONAL, LLC</text>
+</svg>
