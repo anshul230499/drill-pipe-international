@@ -1,35 +1,27 @@
-# Drill Pipe International — Interlocking Mosaic (v4)
+# Drill Pipe International — Mosaic v5
 
-Static website, designed for GitHub and Vercel. Deploy with framework preset **Other**, root directory `/`, no install or build command.
+A single-page website for Drill Pipe International, LLC, prepared for a GitHub repository named `drill-pipe-international` and a Vercel project of the same name.
 
-## Design
-- Large interlocking square/rectangular tiles throughout the site, with an editorial typography hierarchy and 5–7px gutters.
-- Subtle photography zoom on hover and modest scroll entrances, with reduced-motion support.
-- Changed orange to a restrained steel, slate, mineral-blue and parchment palette. No orange dash/eyebrow accents or repeated rounded-card design.
-- Grade labels use E75 / X95 / G105 / S135 and inventory range uses R3, per brief.
-- Logo reused from the quotation.
-- Contact form prepares an email in the visitor's own mail application (no hosted backend).
+## Deploy
 
-## Illustrative stock photos and licensing
-All third-party photographs are **representative industrial context**, **not photographs of DPI/Jindal facilities**. They are requested placeholders for replacement with the company's approved images later. The photos are loaded from the source hosting sites via their external URL; they are not embedded in this repository and require internet access. Verify the specific images and any third-party trademarks or identifiable individuals before public launch.
+1. Extract all files into the root of the GitHub repository (not inside another folder).
+2. Preserve `index.html`, `assets/dpi-logo-v5.svg` and `assets/dpi-mark-v5.svg`.
+3. Commit to `main`. The existing connected Vercel project will redeploy automatically.
+4. Vercel Framework Preset: **Other**; no package install/build step.
 
-- Steel pipe factory (Pexels): https://www.pexels.com/photo/large-industrial-workshop-with-steel-pipe-manufacturing-29842696/
-- Steel pipes (Pexels image 12951636): https://www.pexels.com/photo/12951636/
-- Industrial steelworks (Pexels): https://www.pexels.com/photo/metal-constructions-and-technologies-5503874/
-- Furnace (Pexels): https://www.pexels.com/photo/men-in-helmet-standing-beside-steel-melting-pool-3736110/
-- Forging (Pexels): https://www.pexels.com/photo/a-man-forging-a-metal-5845934/
-- Industrial welding/sparks (Pexels): https://www.pexels.com/photo/machinery-working-on-steel-17167905/
-- Industrial press (Pexels): https://www.pexels.com/photo/a-large-steel-press-with-a-large-table-18569742/
-- Oil rig (Unsplash image photo-1562237548-3c36707230ce): https://unsplash.com/s/photos/oil-rig
+## Updates in v5
 
-Pexels license: https://www.pexels.com/license/; Unsplash license: https://unsplash.com/license/ . Both generally permit commercial use without required attribution, but photos do not imply endorsement or location and some depicted subjects/brands may require separate permission.
+- New vector logo derived from the globe and two-line wordmark in the 2026 DPI quotation.
+- All visible products/process sequence numbers are single-digit (`1`, `2`, ...).
+- Re-selected representative process images with verifiable source captions.
+- Three additional photo tiles: machining, inspection/testing, and storage/delivery.
+- Added a textured steel-pipe image to the large hero tile without cluttering text.
+- Explicit photo disclosures; no claim that any images depict a specific Jindal facility.
 
-## Group manufacturing sourcing
-- https://jindalsaw.com/business-operations/products/pipes-tubes-carbon-steel-alloy-steel-seamless/
-- https://jindalsawusa.net/services/drill-pipe
-- https://jindalsaw.com/business-operations/key-subsidiaries-joint-ventures/jindal-pipe-usa-inc/
+## Replace temporary images
 
-The project owner confirms the manufacturing processes are handled in-house through Jindal group companies, not outsourced. The site does not imply all processes are located in Baytown.
+Every photograph is an `<img>` inside `index.html` and can be replaced with approved Jindal photographs. Images currently use remote Pexels URLs. See `PHOTO_SOURCES.md` for links and relevant limitations. The new logo is an editable SVG under `assets/`.
 
-## Important before publication
-Verify inventory availability, phone and email contact destinations, complete technical grade and API specifications, and upload approved Jindal production photos/video. The sample specs are general and customer orders require formal approval.
+## Contact form
+
+This is a static website. The quote form prepares an email in the visitor's email app; it does not send directly from the browser to a server. Add a proper backend later if desired.
